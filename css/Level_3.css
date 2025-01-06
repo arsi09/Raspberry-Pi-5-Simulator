@@ -1,0 +1,210 @@
+body {
+    /* Set font family and basic text styles */
+    margin: 0;
+    font-family: 'Courier New', monospace;
+    background-image: url('Background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body{
+    background-size: cover; /* Make the background cover the entire screen */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+.level-container {
+    /* Style the Level container */
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#component-title {
+    text-align: center;
+    color: #4a90e2;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#component-content {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main-menu-btn {
+/* Position the main menu button */
+    position: absolute;
+    top: 50px;
+    right:30px;
+}
+
+#check-solution-btn{
+    position: relative; /* Position it relative to its parent container */
+    left: 350px;
+    bottom:10px;
+    margin: 15px auto; /* Center the button horizontally */
+    display: block; /* Make it behave like a block-level element */
+    padding: 10px 15px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn {
+    /* Styling and layout for level navigation */
+
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #357abd;
+}
+
+.nav-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+#code-challenge {
+    margin-top: 20px;
+}
+
+#code-input {
+    width: 100%;
+    min-height: 200px;
+    font-family: 'Courier New', monospace;
+    color: #ffffff;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #000;
+}
+
+#code-input::placeholder{
+
+    color: hsl(0, 0%, 64%);
+}
+
+#result-message {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.volume-btn.locked {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: #cccccc;
+}
+
+.volume-display.locked {
+    opacity: 0.5;
+}
+
+.volume-btn:disabled {
+    pointer-events: none;
+}
+
+.volume-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.volume-btn {
+    /* Position the plus and minus button */
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#volume-display {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.modal {
+    display: none;
+    position: relative; /*  absolute for non-layered behavior */
+    bottom: 35px; 
+    left: 300px;
+    transform: translate(-50%, 0);
+    z-index: 10; /* Lower z-index to allow interaction with background buttons */
+    max-width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 15px 20px;
+    border: 2px solid #4CAF50;
+    pointer-events: auto; /* Ensure the modal itself is clickable */
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#proceed-to-level-4 {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#proceed-to-level-4:hover {
+    background-color: #45a049;
+}

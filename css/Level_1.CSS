@@ -1,0 +1,139 @@
+
+.level-container {
+    /* Set the maximum width of the level container to 800px */
+    max-width: 800px;
+    /* Center the container horizontally */
+    margin: 0 auto;
+    /* Add padding around the container */
+    padding: 10px;
+    /* Center-align the text within the container */
+    text-align: center;
+    /* Set the font family to 'Courier New' monospace */
+    font-family: 'Courier New', monospace;
+    /* Set the text color to black */
+    color: rgb(0, 0, 0);
+}
+
+body {
+    /* Make the background image cover the entire body */
+    background-size: cover;
+}
+
+#component-container {
+    /* Position the component container absolutely */
+    position: absolute;
+    /* Center the container vertically */
+    top: 50%;
+    /* Center the container horizontally */
+    left: 50%;
+    /* Adjust the container's position to account for its size */
+    transform: translate(-50%, -50%);
+    /* Set the background color of the container */
+    background-color: #eb8424;
+    /* Add rounded corners to the container */
+    border-radius: 10px;
+    /* Add padding around the container */
+    padding: 30px;
+    /* Add margin at the bottom of the container */
+    margin-bottom: 20px;
+    /* Set a minimum height for the container */
+    min-height: 300px;
+    /* Set a fixed width for the container */
+    width: 1200px;
+    /* Use flexbox layout for the container */
+    display: flex;
+    /* Stack flex items vertically */
+    flex-direction: column;
+    /* Center items vertically within the container */
+    justify-content: center;
+}
+
+#component-title {
+    /* Set the color of the component title to black */
+    color: rgb(8, 8, 8);
+    /* Add margin at the bottom of the title */
+    margin-bottom: 20px;
+}
+
+.component-text {
+    text-align: left;
+    
+}
+
+#component-content {
+    /* Set the font size of the component content */
+    font-size: 1.1em;
+    /* Set the line height of the component content */
+    line-height: 1.6;
+    padding: 15px;
+}
+
+.component-layout {
+    /* Position the component layout relative to its normal position */
+    position: relative;
+    /* Shift the layout 200 pixels to the left */
+    right: 200px;
+    /* Use flexbox layout for the component layout */
+    display: flex;
+    /* Add margin at the bottom of the layout */
+    margin-bottom: 20px;
+    /* Add a gap of 40 pixels between flex items */
+    gap: 40px;
+}
+
+.component-image,
+.component-image2 {
+    /* Set the maximum width of the component images */
+    max-width: 550px;
+    /* Maintain the aspect ratio of the images */
+    height: auto;
+    /* Add a gap of 30 pixels between images */
+    gap: 30px;
+    /* Resize the images to fit within the container while maintaining aspect ratio */
+    object-fit: contain;
+}
+
+.navigation-buttons {
+    /* Use flexbox layout for the navigation buttons */
+    display: flex;
+    /* Distribute space evenly between the buttons */
+    justify-content: space-between;
+    /* Add a gap of 10 pixels between buttons */
+    gap: 10px;
+}
+
+#left-arrow.nav-btn {
+    /* Push the left arrow button to the left */
+    margin-right: auto;
+}
+
+.nav-btn {
+    /* Make the navigation buttons grow to fill available space */
+    flex-grow: 1;
+    /* Add padding around the buttons */
+    padding: 10px 20px;
+    /* Set the background color of the buttons */
+    background-color: rgb(255, 0, 93);
+    /* Set the text color of the buttons to white */
+    color: white;
+    /* Remove the border of the buttons */
+    border: none;
+    /* Add rounded corners to the buttons */
+    border-radius: 5px;
+    /* Change the cursor to a pointer on hover */
+    cursor: pointer;
+    /* Add a smooth transition effect for background color */
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    /* Change the background color of the buttons on hover */
+    background-color: rgb(205, 0, 75);
+}
+
+.nav-btn:disabled {
+    /* Set the background color of disabled buttons */
+    background-color: #aaa;
+    /* Change the cursor to not-allowed for disabled buttons */
+    cursor: not-allowed;
+}

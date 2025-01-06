@@ -1,0 +1,174 @@
+body {
+    /* Set font family and basic text styles */
+    margin: 0;
+    font-family: 'Courier New', monospace;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body{
+    background-size: cover; /* Make the background cover the entire screen */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+.level-container {
+        /* Style the Level container */
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#component-title {
+    text-align: center;
+    color: #4a90e2;
+    margin-bottom: 20px;
+}
+
+#component-content {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.navigation-buttons {
+    /* Styling and layout for level navigation */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-btn {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #357abd;
+}
+
+.nav-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+#main-menu-btn {
+    /* Position the main menu button */
+    position: absolute;
+    top: 50px;
+    right:30px;
+}
+
+#check-solution-btn{
+    position: relative; /* Position it relative to its parent container */
+    left: 350px;
+    bottom:10px;
+    margin: 15px auto; /* Center the button horizontally */
+    display: block; /* Make it behave like a block-level element */
+    padding: 10px 15px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#code-challenge {
+    margin-top: 20px;
+}
+
+.image-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#code-input {
+     /* Specific styling for code input */
+    width: 100%;
+    min-height: 200px;
+    font-family: 'Courier New', monospace;
+    color: #ffffff;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #000;
+}
+
+#code-input::placeholder
+{
+    color:#bbbbbb;
+}
+
+#result-message {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.modal {
+    display: none;
+    position: relative; 
+    bottom: 35px; 
+    left: 300px;
+    transform: translate(-50%, 0);
+    z-index: 10; /* Lower z-index to allow interaction with background buttons */
+    max-width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 15px 20px;
+    border: 2px solid #4CAF50;
+    pointer-events: auto; 
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#proceed-to-level-3 {
+    /*Level 3 Button*/
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#proceed-to-level-3:hover {
+    background-color: #45a049;
+}

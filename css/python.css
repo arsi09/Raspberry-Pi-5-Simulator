@@ -1,0 +1,148 @@
+:root {
+    /* Define color variables for the tutorial */
+    --bg-primary: #1a1a2e;      /* Primary background color */
+    --bg-secondary: #16213e;    /* Secondary background color */
+    --text-primary: #f898a8;    /* Primary text color */
+    --text-secondary: #0f3460;  /* Secondary text color */
+    --accent: #3ccf4e;          /* Accent color */
+}
+
+body {
+    /* Set font family and basic text styles */
+    font-family: 'Courier New', monospace;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    
+    /* Set background image styles */
+    background-size: cover;     /* Make the background cover the entire screen */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+#tutorial-container {
+    /* Style the tutorial container */
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--bg-secondary);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.stage {
+    /* Style each tutorial stage */
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--text-secondary);
+    padding-bottom: 20px;
+}
+
+.challenge {
+    /* Style challenge sections */
+    background-color: var(--bg-primary);
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+#code-editor {
+    /* Style the code editor */
+    width: 100%;
+    min-height: 200px;
+    background-color: #000;
+    color: white;
+    font-family: 'Courier New', monospace;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#code-editor::placeholder {
+    /* Style the placeholder text in the code editor */
+    color: hsl(0, 0%, 64%);
+}
+
+.button {
+    /* Style buttons */
+    background-color: var(--text-primary);
+    color: var(--bg-primary);
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.button:hover {
+    /* Style button hover state */
+    background-color: var(--accent);
+}
+
+#main-menu-btn {
+    /* Position the main menu button */
+    position: absolute;
+    top: 50px;
+    right: 30px;
+}
+
+#next-stage {
+    /* Position the next stage button */
+    position: absolute;
+    right: 30px;
+}
+
+#feedback {
+    /* Style feedback messages */
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.success {
+    /* Style success feedback */
+    background-color: rgba(0, 255, 0, 0.2);
+    color: #3ccf4e;
+}
+
+.error {
+    /* Style error feedback */
+    background-color: rgba(255, 0, 0, 0.2);
+    color: #e94560;
+}
+
+.completion-message {
+    /* Style completion message */
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 600px;
+}
+
+.completion-message h2 {
+    /* Style completion message heading */
+    color: #2ecc71;
+    margin-bottom: 1rem;
+}
+
+.python-link {
+    /* Style Python link */
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 12px 24px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.python-link:hover {
+    /* Style Python link hover state */
+    background-color: #2980b9;
+}
