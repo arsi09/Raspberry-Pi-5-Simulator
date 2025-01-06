@@ -30,12 +30,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Event listeners for level buttons
     document.getElementById("level-python-btn").addEventListener("click", () => {
-        location.href = 'Python.html'; // Navigate to Python tutorial
+        location.href = 'HTML/Python.html'; // Navigate to Python tutorial
     });
 
     document.getElementById("level-1-btn").addEventListener("click", () => {
         
-        location.href = 'Level_1.html'; // Navigate to Level 1
+        location.href = 'HTML/Level_1.html'; // Navigate to Level 1
     });
 
 
@@ -50,24 +50,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
     document.getElementById("level-2-btn").addEventListener("click", () => {
-        location.href = 'Level_2.html'; // Navigate to Level 2
+        location.href = 'HTML/Level_2.html'; // Navigate to Level 2
     });
 
     document.getElementById("level-3-btn").addEventListener("click", () => {
-        location.href = 'Level_3.html'; // Navigate to Level 3
+        location.href = 'HTML/Level_3.html'; // Navigate to Level 3
     });
 
     document.getElementById("level-4-btn").addEventListener("click", () => {
-        location.href = 'Level_4.html'; // Navigate to Level 4
+        location.href = 'HTML/Level_4.html'; // Navigate to Level 4
     });
 
     document.getElementById("level-5-btn").addEventListener("click", () => {
-        location.href = 'Level_5.html'; // Navigate to Level 5
+        location.href = 'HTML/Level_5.html'; // Navigate to Level 5
     });
 
     // Event listener for Quit button
     document.getElementById("quit-btn").addEventListener("click", () => {
-        location.href = 'GameOver.html'; // Navigate to Quit screen
+        location.href = 'HTML/GameOver.html'; // Navigate to Quit screen
     });
 
     // Initialize menu with unlocked levels
