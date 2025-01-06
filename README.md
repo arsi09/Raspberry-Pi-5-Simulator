@@ -25,6 +25,7 @@ An interactive educational web application designed to teach Python programming 
 ## Getting Started
 
 1. Clone the repository
-2. Open inde.html in a modern web browser
-3. Start with the Python Tutorial
-4. Progress through levels by completing challenges
+2. Ensure all file, image and audio paths are correct 
+3. Open inde.html in a modern web browser
+4. Start with the Python Tutorial
+5. Progress through levels by completing challenges
