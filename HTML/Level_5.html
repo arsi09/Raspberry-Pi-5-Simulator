@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raspberry Pi 5 Simulator - Level 5: Motion Sensor</title>
+    <link rel="stylesheet" href="Level_5.css">
+</head>
+
+<style>
+    body{
+        margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    height: 100vh; /* Make the body height equal to the viewport height */
+    background-image: url('Background.png');
+    background-size: cover; /* Make the background cover the entire screen */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+       }
+</style>
+
+
+<body>
+    <div id="component-container">
+        <div class="level-container">
+            <h1>Level 5: Motion Detection</h1>
+            <h2 id="component-title">Motion Sensor Integration</h2>
+                
+            <div id="component-content">
+                <!-- Component content will be dynamically inserted -->
+            </div>
+        
+            <!-- Navigation buttons -->
+            <div class="navigation-buttons">
+                <!-- Previous button -->
+                <button id="left-arrow" class="nav-btn">← Previous</button>
+                <!-- Main menu button -->
+                <button id="main-menu-btn" class="nav-btn">Main Menu</button>
+                <!-- Next button -->
+                <button id="right-arrow" class="nav-btn">Next →</button>
+                <button id="start-challenge-btn" class="nav-btn" style="display: none;">Start Challenge</button>
+                <!-- Audio elements for sound effects -->
+                <audio id="clickSound" src="click.mp3" preload="auto"></audio>
+                <audio id="successSound" src="correct.mp3" preload="auto"></audio>
+                <audio id="errorSound" src="wrong.mp3" preload="auto"></audio>
+            </div>
+        </div>
+    </div>
+<!-- Include audio manager script -->
+    <script src="Audio.js"></script>
+    <!-- Include level-specific script -->
+    <script src="Level_5.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Python Tutorial Level</title>
+    <link rel="stylesheet" href="python.css">
+</head>
+
+<style>
+    body{
+        margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    height: 100vh; /* Make the body height equal to the viewport height */
+    background-image: url('Python.png'); /* Replace with your image path */
+    background-size: cover; /* Make the background cover the entire screen */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+       }
+</style>
+
+<body>
+    <div id="tutorial-container">
+        <h1>Python Tutorial Level</h1>
+        <div id="stage-content"></div>
+        <textarea id="code-editor" placeholder="Write your Python code here..."></textarea>
+        <div id="feedback"></div>
+        <button id="run-code" class="button">Run Code</button>
+        <button id="main-menu-btn" class="button">Main Menu</button>
+        <button id="next-stage" class="button">Next Stage</button>
+        
+        <audio id="clickSound" src="click.mp3" preload="auto"></audio>
+        <audio id="successSound" src="correct.mp3" preload="auto"></audio>
+        <audio id="errorSound" src="wrong.mp3" preload="auto"></audio>
+    </div>
+    <script src="Audio.js"></script>
+    <script src="python.js"></script>
+</body>
+</html>
