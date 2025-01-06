@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="styles.css">
+
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Raspberry Pi 5 Simulator</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+        <script src="Level_1.js"></script>
+    </head>
+
+    <style>
+     body{
+          background-image: url('Background_2.png');
+        }
+    </style>
+
+    <body>
+        <header>
+            <h1>Raspberry Pi 5 Simulator</h1>
+            <p>Learn About Raspberry Pi  through fun challenges!</p>
+        </header>
+    
+        <main id="main-menu">
+            <h2>Main Menu</h2>
+            <ul>
+            <div class="level-list">
+                <li> <button id="level-python-btn" class="level-btn">Level 0: Python Tutorial</button></li>
+               <li> <button id="level-1-btn" class="level-btn">Level 1: Component Introduction</button></li>
+               <li><button id="level-2-btn" class="level-btn locked" disabled>Level 2: LED Interaction</button></li>
+               <li><button id="level-3-btn" class="level-btn locked" disabled>Level 3: Speaker Integration</button></li>
+               <li><button id="level-4-btn" class="level-btn locked" disabled>Level 4: Environmental Sensing</button></li>
+               <li><button id="level-5-btn" class="level-btn locked" disabled>Level 5: Motion and Interaction</button></li>
+               <button id="quit-btn" class="quit-btn">Quit</button>
+               <button id="reset-progress-btn" class="reset-btn">Reset Progress</button>
+
+                
+            </div>
+        </ul>
+        </main>
+    
+        <footer>
+            <p>&copy; 2024 Raspberry Pi 5 Simulator</p>
+        </footer>
+
+        <script src="Audio.js"></script>
+        <script src="script.js"></script>
+        
+    </body>
+    </html>
