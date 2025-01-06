@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-size: cover;
+}
+
+
+
+header {
+    text-align: center;
+    font-family: 'Showcard Gothic';
+    color: rgb(255, 0, 93);
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    
+    font-size: 1.2em;
+    color: rgb(255, 0, 93);
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Showcard Gothic';
+    color: rgb(255, 0, 93);
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#level-list {
+   list-style: none; 
+    padding: 0;
+    margin: 0;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+.level-btn {
+    font-size: 1.2em;
+    font-family: 'Showcard Gothic';
+    padding: 10px 20px;
+    margin: 10px 0;
+    color: black;
+    background-color: rgb(255, 0, 93);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+    width: 500px;
+}
+
+.level-btn:hover {
+    background-color:rgb(205, 0, 75);
+}
+
+.level-btn.locked {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 30px;
+}
+
+.quit-btn {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quit-btn:hover {
+    background-color: #cc0000;
+}
+
+.reset-btn
+{
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
